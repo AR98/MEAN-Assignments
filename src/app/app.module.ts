@@ -7,18 +7,22 @@ import { AppRoutingModule } from './app-routing.module';
 import {DefaultModule } from './layout/default/default.module'
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AuthModule } from './layout/auth/auth.module';
+
+
 
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
+  declarations: [ 
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    DefaultModule 
+    DefaultModule ,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
