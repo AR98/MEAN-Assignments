@@ -19,6 +19,7 @@ path:'', component: DashboardComponent
 },
 {
   path:'auth', component: AuthComponent,children:[
+    {path: '', component: LoginComponent},
     {path:'login',component: LoginComponent},
     {path: 'signup', component: SignupComponent}
   ]

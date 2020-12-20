@@ -5,21 +5,20 @@ import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.componen
 import { RouterModule } from '@angular/router';
 import { PaymentComponent } from 'src/app/modules/payment/payment.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { DataTablesModule } from 'angular-datatables';
+import { DashboardModule } from 'src/app/modules/dashboard/dashboard.module';
 
 
 
 @NgModule({
   declarations: [
     DefaultComponent,
-    DashboardComponent,
     PaymentComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     SharedModule,
-    DataTablesModule
+    DashboardModule
   ]
 })
 export class DefaultModule { }
