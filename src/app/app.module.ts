@@ -3,22 +3,27 @@ import { NgModule } from '@angular/core';
 
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import {DefaultModule } from './layout/default/default.module'
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    DefaultModule 
+    DefaultModule ,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
